@@ -1,0 +1,33 @@
+<a:application xmlns:a="http://ajax.org/2005/aml">
+    <a:window
+      id        = "winFileFilter"
+      title     = "File List Filter"
+      center    = "true"
+      modal     = "false"
+      buttons   = "close"
+      kbclose   = "true"
+      width     = "400"
+      onshow	= "
+      	tbFilteValue.setValue(require('ext/filesfilter/filesfilter').filte_val || '');
+      "
+      >
+        <a:vbox>
+            <a:hbox padding="5" edge="10">
+                <a:label width="50">filte exp</a:label>
+                <a:textbox id="tbFilteValue" flex="1" realtime= "true" />
+            </a:hbox>
+            <a:hbox padding="0" edge="0 2 2 60">
+                <a:label width="200">.eg: .pyc, .so, hidden</a:label>
+            </a:hbox>
+            <a:divider />
+            <a:hbox pack="end" padding="5" edge="10 10 5 10">
+                <a:button class="ui-btn-green" default="2" caption="Filte" 
+                	disabled = "{!tbFilteValue.value.trim()}"
+                  onclick = "
+                    require('ext/filesfilter/filesfilter').filte(tbFilteValue.value);
+                  "/>
+                <a:button onclick="winFileFilter.hide()">Done</a:button>
+            </a:hbox>
+        </a:vbox>
+    </a:window>
+</a:application>
