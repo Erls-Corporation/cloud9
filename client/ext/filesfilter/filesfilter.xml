@@ -22,7 +22,6 @@
             <a:divider />
             <a:hbox pack="end" padding="5" edge="10 10 5 10">
                 <a:button class="ui-btn-green" default="2" caption="Filte" 
-                	disabled = "{!tbFilteValue.value.trim()}"
                   onclick = "
                     require('ext/filesfilter/filesfilter').filte(tbFilteValue.value);
                   "/>
