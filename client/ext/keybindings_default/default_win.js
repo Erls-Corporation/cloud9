@@ -49,7 +49,7 @@ return keys.onLoad({
             "searchinfiles": "Alt-Shift-F"
         },
         "formatjson" : {
-            "format" : "Ctrl-Shift-J"
+            "format" : "Alt-Shift-J"
         },
         "settings": {
             "showsettings": "Ctrl-,"
@@ -75,7 +75,7 @@ return keys.onLoad({
             "selectall": "Ctrl-A",
             "removeline": "Ctrl-D",
             "gotoline": "Ctrl-G",
-            "togglecomment": "Ctrl-7",
+            "togglecomment": "Ctrl-/",
             "findnext": "F3",
             "findprevious": "Shift-F3",
             "find": "Ctrl-F",
@@ -115,8 +115,9 @@ return keys.onLoad({
             "selectlineend": "Shift-End",
             "del": "Delete",
             "backspace": "Backspace",
-            "outdent": "Shift-Tab",
-            "indent": "Tab"
+            "outdent": "Shift-Tab|Ctrl-[",
+            "indent": "Tab|Ctrl-]",
+            "tmautocom": "Esc"
         }
     }
 });

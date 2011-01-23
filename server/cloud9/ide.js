@@ -56,7 +56,10 @@ module.exports = Ide = function(options, httpServer, exts) {
             "ext/console/console",
             "ext/tabbehaviors/tabbehaviors",
             "ext/keybindings/keybindings",
-            "ext/watcher/watcher"
+            "ext/watcher/watcher",
+            //my plugins
+            "ext/showtoolbar/showtoolbar",
+            "ext/filesfilter/filesfilter",
         ]
     }
 
