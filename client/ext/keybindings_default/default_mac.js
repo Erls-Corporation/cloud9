@@ -117,8 +117,9 @@ return keys.onLoad({
             "selectlineend": "Shift-End",
             "del": "Delete",
             "backspace": "Command-Backspace|Option-Backspace|Backspace",
-            "outdent": "Shift-Tab",
-            "indent": "Tab"
+            "outdent": "Shift-Tab|Ctrl-[",
+            "indent": "Tab|Ctrl-]",
+            "tmautocom": "Esc"
         }
     }
 });
