@@ -10,6 +10,7 @@ define(function(require, exports, module) {
 
 var ide = require("core/ide");
 var ext = require("core/ext");
+var EditSession = require("ace/edit_session").EditSession;
 var Document = require("ace/document").Document;
 var markup = require("text!ext/code/code.xml");
 var settings = require("text!ext/code/settings.xml");
@@ -65,7 +66,7 @@ return ext.register("ext/code/code", {
             var _self = this;
 
             doc.isInited = doc.hasValue();
-            doc.acedoc = new Document(doc.getValue() || "");
+            doc.acedoc = new EditSession(doc.getValue() || "");
             doc.acedoc.setUndoManager(actiontracker);
             
             doc.addEventListener("prop.value", function(e){
@@ -210,8 +211,8 @@ return ext.register("ext/code/code", {
         ide.addEventListener("keybindingschange", function(e){
             if (typeof ceEditor == "undefined")
                 return;
-            var bindings = e.keybindings.code;
-            ceEditor.$editor.keyBinding.setConfig(bindings);
+            var bindings = e.keybindings.code;            
+            ceEditor.$editor.keyBinding.$defaulKeyboardHandler.setConfig(bindings);
         });
     },
 

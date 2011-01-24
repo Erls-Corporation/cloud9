@@ -60,6 +60,7 @@ module.exports = Ide = function(options, httpServer, exts) {
             //my plugins
             "ext/showtoolbar/showtoolbar",
             "ext/filesfilter/filesfilter",
+            "ext/colorpicker/colorpicker",
         ]
     }
 

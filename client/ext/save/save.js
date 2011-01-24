@@ -199,7 +199,7 @@ return ext.register("ext/save/save", {
             }, 2500);
         });
         
-        page.$at.reset(); //@todo this sucks... please fix
+        //page.$at.reset(); //@todo this sucks... please fix
         return false;
     },
     
