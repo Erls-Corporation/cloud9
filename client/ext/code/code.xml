@@ -1,14 +1,14 @@
 <a:application xmlns:a="http://ajax.org/2005/aml">
     <a:script><![CDATA[
         SupportedModes = {
-            "application/javascript": "javascript",
-            "application/json": "javascript",
-            "text/css": "css",
-            "text/html": "html",
-            "application/xhtml+xml": "html",
+            "application/javascript": "ace/textmate/mode/javascript",
+            "application/json": "ace/textmate/mode/javascript",
+            "text/css": "ace/textmate/mode/css",
+            "text/html": "ace/textmate/mode/html",
+            "application/xhtml+xml": "ace/textmate/mode/html",
             "application/xml": "xml",
             "application/x-httpd-php": "php",
-            "text/x-script.python": "python",
+            "text/x-script.python": "ace/textmate/mode/python",
             "text/x-script.coffeescript": "python" // TODO
         }
 

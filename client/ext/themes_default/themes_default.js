@@ -16,6 +16,7 @@ return ext.register("ext/themes_default/themes_default", {
     nodes   : [],
 
     themes  : {
+        "Django" : "ace/textmate/theme/django",
         "TextMate" : "ace/theme/textmate",
         "Eclipse" : "ace/theme/eclipse",
         "Dawn" : "ace/theme/dawn",
